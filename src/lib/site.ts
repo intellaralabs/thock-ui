@@ -14,4 +14,6 @@ export const site = {
   templatesHref: "https://thock-ui.vercel.app/templates",
   /** Prefix for the Terms / Privacy / Refunds / Licence pages. The public export points it at the official site. */
   policiesBase: "https://thock-ui.vercel.app",
+  /** The public source repository for the free components. */
+  github: "https://github.com/intellaralabs/thock-ui",
 };
