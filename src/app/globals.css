@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "../registry/styles/tactile.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--tactile-bg);
+  color: var(--tactile-fg);
+}
+
+/* Shiki dual theme: light by default, dark under .dark */
+.shiki,
+.shiki span {
+  color: var(--shiki-light);
+}
+.dark .shiki,
+.dark .shiki span {
+  color: var(--shiki-dark);
+}
+.shiki {
+  background: transparent !important;
+}

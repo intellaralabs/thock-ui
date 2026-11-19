@@ -1,0 +1,11 @@
+# Not part of the main site: each template deploys as its own Vercel project.
+/templates
+/marketplace
+/plans
+/dist
+/.claude
+# Local settings (test-mode checkout links live here).
+.env*
+!.env.example
+**/node_modules
+**/.next
